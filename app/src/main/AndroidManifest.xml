@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="Sehat AI"
+        android:theme="@style/Theme.SehatAI"
+        android:usesCleartextTraffic="false">
+
+        <activity android:name=".WebAssistantActivity" />
+        <activity android:name=".PatientActivity" />
+        <activity android:name=".DoctorActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
